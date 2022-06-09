@@ -115,6 +115,12 @@ margin-left: 93px;
 
 /* Contacts */
 
+.contacts .icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+
 .contacts {
     display: flex;
     margin-left: auto;
@@ -135,6 +141,10 @@ margin-left: 93px;
 .contacts .link:hover,
 .contacts .link:focus {
     color: var(--accent-color);
+}
+
+.contacts .link:hover .icon {
+    fill: var(--accent-color);
 }
 
 /* Hero */
@@ -289,9 +299,25 @@ margin-bottom: 0;
 }
 
 /* Command */
-.icon-social {
+.social-list {
     display: flex;
+    flex-wrap: wrap;
+}
 
+.link-icon {
+   
+    
+}
+
+.social-network {
+    width: 20px;
+    height: 20px;
+   margin: 0 auto;
+   
+}
+
+.social-network:hover {
+    fill: var(--white-color);
 }
 
 .command-list {
