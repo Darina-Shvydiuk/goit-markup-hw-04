@@ -13,6 +13,7 @@
     --accent-color: #2196F3;
     --white-color:#FFFFFF;
     --black-color:#000000;
+    --color-icon:#AFB1B8;
 
 /* цвета фонов */
     
@@ -314,16 +315,21 @@ margin-bottom: 0;
 .link-icon {
     display: flex;
     height: 100%;
-    background-color: var(--accent-color);
+    background-color: var(--white-color);
     justify-content: center;
     align-items: center;
     border-radius: 50%;
 }
 
+.link-icon:hover,
+.link-icon:focus {
+    background-color: var(--accent-color);
+}
+
 .social-network {
     width: 20px;
     height: 20px;
-   
+   fill: var(--color-icon);
 }
 
 .social-network:hover {
@@ -372,6 +378,43 @@ font-weight: 500;
         color: var(--secondary-text-color);
 }
 
+/* Clients */
+.client-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.client-list>li {
+    width: 170px;
+    height: 92px;
+}
+.icon-client {
+    width: 106px;;
+    height: 60px;
+    fill: var(--color-icon);
+}
+
+.icon-client:hover,
+.icon-client:focus {
+    fill: var(--accent-color);
+}
+
+.link-client:hover,
+.link-client:focus {
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.link-client {
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    padding: 16px 32px;
+    /* justify-content: center; */
+        align-items: center;
+        
+}
 /* Examples */
 
 .work-list {
@@ -538,4 +581,36 @@ margin-top: 20px;
 .address-list .tel:hover,
 .address-list .tel:focus {
     color: var(--accent-color);
+}
+
+.footer-inner {
+display: flex;
+}
+
+.inner-one {
+    margin-right: 70px;
+}
+.footer-title{
+    color: var(--white-color);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+
+        margin-top: 0;
+        margin-bottom: 20px;
+}
+
+.link-icon.footer {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.link-icon.footer:hover,
+.link-icon.footer:focus {
+background-color: var(--accent-color);
+}
+
+.social-network.footer {
+    fill: var(--white-color);
 }
