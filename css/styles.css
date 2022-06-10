@@ -119,6 +119,7 @@ margin-left: 93px;
     width: 16px;
     height: 12px;
     margin-right: 10px;
+    fill: var(--secondary-text-color);
 }
 
 .contacts {
@@ -143,6 +144,7 @@ margin-left: 93px;
     color: var(--accent-color);
 }
 
+.contacts .link:hover .icon,
 .contacts .link:hover .icon {
     fill: var(--accent-color);
 }
@@ -302,17 +304,25 @@ margin-bottom: 0;
 .social-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
+.social-list>li {
+    width: 44px;
+    height: 44px;
+}
 .link-icon {
-   
-    
+    display: flex;
+    height: 100%;
+    background-color: var(--accent-color);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
 
 .social-network {
     width: 20px;
     height: 20px;
-   margin: 0 auto;
    
 }
 
