@@ -146,7 +146,7 @@ margin-left: 93px;
 }
 
 .contacts .link:hover .icon,
-.contacts .link:hover .icon {
+.contacts .link:focus .icon {
     fill: var(--accent-color);
 }
 
@@ -227,7 +227,7 @@ margin-left: 93px;
     margin-right: 30px;
 }
 
-.feature-list .item::before {
+/* .feature-list .item::before {
 display: block;
 content: "" ;
 height: 120px;
@@ -244,7 +244,7 @@ background-color: var(--background-color-command);
     background-image: url(../images/antenna\ 1.svg);-еще один способ;
 } */
 
-.feature-list .item:nth-child(1)::before {
+/* .feature-list .item:nth-child(1)::before {
 background-image: url(../images/antenna\ 1.svg);
 }
 
@@ -258,7 +258,7 @@ background-image: url(../images/antenna\ 1.svg);
 
 .feature-list .item:nth-child(4)::before {
     background-image: url(../images/astronaut\ 1.svg);
-}
+}  */
 
 
 .feature-list .item:last-child {
@@ -438,6 +438,11 @@ width: 370px;
 /* width: calc((100% - 60px) / 3); */
 }
 
+.work-list .card:hover,
+.work-list .card:focus {
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
 .work-list .card:nth-child(3n) {
     margin-right: 0;
 }
@@ -497,6 +502,7 @@ width: 370px;
 .button-hero:focus {
     color: var(--accent-color);
     background-color: var(--white-color);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .button-list {
@@ -532,6 +538,8 @@ width: 370px;
 .button-list .button:focus {
 color: var(--white-color);
 background-color: var(--accent-color);
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
 }
 
 .button {
