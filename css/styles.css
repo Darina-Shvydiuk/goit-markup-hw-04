@@ -235,8 +235,8 @@ margin-left: 93px;
     align-items: center;
     justify-content: center;
     display: flex;
-    padding: 25px 100px;
     margin-bottom: 30px;
+    height: 120px;
     border-radius: 4px;
 }
 
@@ -285,13 +285,18 @@ margin-bottom: 0;
 .social-list-footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .social-list>li {
     width: 44px;
     height: 44px;
 }
+
+.social-list>li:not(:last-child) {
+margin-right: 10px;
+}
+
 .link-icon {
     display: flex;
     height: 100%;
@@ -306,15 +311,20 @@ margin-bottom: 0;
     background-color: var(--accent-color);
 }
 
+.link-icon:hover .social-network,
+.link-icon:focus .social-network {
+    fill: var(--white-color);
+}
+
+
 .social-network {
     width: 20px;
     height: 20px;
    fill: var(--color-icon);
 }
 
-.social-network:hover {
-    fill: var(--white-color);
-}
+
+
 
 .command-list {
     display: flex;
@@ -377,8 +387,8 @@ font-weight: 500;
     fill: var(--color-icon);
 }
 
-.icon-client:hover,
-.icon-client:focus {
+.link-client:hover .icon-client,
+.link-client:focus .icon-client {
     fill: var(--accent-color);
 }
 
@@ -589,10 +599,6 @@ align-items: baseline;
         font-size: 14px;
         line-height: 16px;
         text-transform: uppercase;
-
-        /* margin-top: 0;
-        margin-bottom: 20px; */
-
         padding-top: 0px;
         padding-bottom: 20px;
         margin: 0;
